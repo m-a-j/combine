@@ -2,7 +2,7 @@ library("rvest")
 library("magrittr")
 
 mainDir <- "C:/Users/Markus/Pictures/gocomics/"
-# 
+# subDir: cartoon name == folder name
 subDir <- "thebarn"
 
 dir.create(file.path(mainDir, subDir))
