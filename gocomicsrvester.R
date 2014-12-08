@@ -1,9 +1,15 @@
 library("rvest")
 library("magrittr")
 
+<<<<<<< HEAD:goscr.R
 mainDir <- "C:/Users/Markus/Pictures/gocomics"
 # subDir: cartoon name == folder name
 subDir <- "peanuts"
+=======
+mainDir <- "C:/Users/Markus/Pictures/gocomics/"
+# subDir: cartoon name == folder name
+subDir <- "thebarn"
+>>>>>>> origin/master:gocomicsrvester.R
 
 dir.create(file.path(mainDir, subDir))
 setwd(file.path(mainDir, subDir))
