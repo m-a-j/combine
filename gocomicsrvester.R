@@ -1,6 +1,8 @@
 library("rvest")
 library("magrittr")
 
+# mainDir: path to folder into which pictures will be downloaded (excl. subDir)
+# - make sure to change this to a path that makes sense to you!
 mainDir <- "C:/Users/Markus/Pictures/gocomics"
 # subDir: cartoon name == folder name
 subDir <- "peanuts"
@@ -14,6 +16,7 @@ for(yy in 1974:1974){
     mms <- sprintf("%02d", mm)
     for(dd in 1:31){
       
+      # some months are only 30 days long. this line takes care of that.
       if(!((mm==2||mm==4||mm==6||mm==9||mm==11)&&(dd==31))) {
         
         dds <- sprintf("%02d", dd)
